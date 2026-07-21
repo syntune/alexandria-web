@@ -1,0 +1,127 @@
+.book-detail-page {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 24px;
+    color: #f2f2f2;
+}
+
+.book-detail-header {
+    display: flex;
+    gap: 36px;
+    align-items: flex-start;
+}
+
+.book-cover-box {
+    flex-shrink: 0;
+}
+
+.book-detail-cover {
+    width: 260px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #2f4f3f;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.book-info-box {
+    flex: 1;
+}
+
+.book-detail-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 28px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.book-meta-row {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 24px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.book-meta-label {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.book-meta-value {
+    color: #eeeeee;
+}
+
+.genre-list {
+    line-height: 1.7;
+}
+
+.genre-link-detail {
+    color: #4fa36f;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.genre-link-detail:hover {
+    color: #7fd99d;
+}
+
+.genre-separator {
+    color: #bfbfbf;
+}
+
+.book-action-row {
+    margin-top: 32px;
+}
+
+.read-button {
+    display: inline-block;
+    padding: 12px 34px;
+    background-color: #2f6f46;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 6px;
+    transition: 0.2s ease;
+}
+
+.read-button:hover {
+    background-color: #3f8f5c;
+    transform: translateY(-1px);
+}
+
+.book-content-section {
+    margin-top: 44px;
+}
+
+.book-content-section h2 {
+    color: #4fa36f;
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom: 2px solid #2f6f46;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+.book-description-full {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #eeeeee;
+}
+
+@media (max-width: 800px) {
+    .book-detail-header {
+        flex-direction: column;
+    }
+
+    .book-detail-cover {
+        width: 220px;
+        height: 320px;
+    }
+
+    .book-meta-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+}

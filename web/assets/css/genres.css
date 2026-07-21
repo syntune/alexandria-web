@@ -1,0 +1,50 @@
+.browse-layout {
+    display: flex;
+    gap: 36px;
+    align-items: flex-start;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.popular-books {
+    flex: 1;
+}
+
+.genre-sidebar {
+    width: 330px;
+    flex-shrink: 0;
+}
+
+.genre-sidebar {
+    border: 1px solid #aaa;
+    padding: 16px;
+    color: white;
+}
+
+.genre-sidebar h2 {
+    color: white;
+    margin-bottom: 12px;
+}
+
+.genre-sidebar-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid #aaa;
+}
+
+.genre-link {
+    color: white;
+    text-decoration: none;
+    padding: 12px 6px;
+    border-bottom: 1px solid #aaa;
+    font-weight: 600;
+}
+
+.genre-link:hover {
+    color: #207F6D;
+}
+
+.genre-link:first-child {
+    color: #207F6D;
+}
